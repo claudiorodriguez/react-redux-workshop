@@ -1,0 +1,12 @@
+.button {
+  background: #4fc3f7;
+  font-weight: bold;
+  border: 0;
+  appearance: none;
+  padding: 16px;
+
+  &[disabled] {
+    background: #999;
+    color: white;
+  }
+}

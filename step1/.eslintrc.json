@@ -1,0 +1,4 @@
+{
+  "extends": "mailonline",
+  "root": true
+}

@@ -1,0 +1,4 @@
+{
+  "extends": ["mailonline", "mailonline/react"],
+  "root": true
+}

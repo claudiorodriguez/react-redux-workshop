@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RepoList/> renders "Loading" while fetching 1`] = `
+<p>
+  Loading...
+</p>
+`;
+
+exports[`<RepoList/> renders "No results" when repos prop is null 1`] = `
+<p>
+  No results
+</p>
+`;
+
+exports[`<RepoList/> renders repo list with results when not fetching 1`] = `
+<ul>
+  <li>
+    <a
+      href="https://github.com/orgname/firstrepo"
+    >
+      firstrepo
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://github.com/orgname/secondrepo"
+    >
+      secondrepo
+    </a>
+  </li>
+</ul>
+`;

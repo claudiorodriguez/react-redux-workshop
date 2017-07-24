@@ -1,0 +1,14 @@
+*.log
+*.swo
+*.swp
+*.lock
+.DS_Store
+.idea/
+.scripts/
+.vagrant/
+.nyc_output/
+.vscode/
+dist/
+coverage/
+dev/
+node_modules/
