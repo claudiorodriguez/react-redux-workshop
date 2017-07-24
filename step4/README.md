@@ -198,6 +198,7 @@ I'll just provide example tests for the main saga, the reducer, and the componen
       });
     });
     ```
+  - Get a coverage report with `npm run test -- --coverage`
 
 
 That's it! I hope you enjoyed the workshop. Feel free to contact me if you have any questions, or create an issue in this repository.
