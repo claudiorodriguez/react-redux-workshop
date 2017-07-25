@@ -100,29 +100,29 @@ I'll just provide example tests for the main saga, the reducer, and the componen
         expect(reposReducer(initialState, errorAction).error).toBe(error);
       });
 
-      it('receivedRepos sets repos and stops loading', () => {
-        const initialStateWithLoading = {
+      it('receivedRepos sets repos and stops fetching', () => {
+        const initialStateWithFetching = {
           ...initialState,
-          loading: true
+          fetching: true
         };
         const receiveAction = receivedRepos(mockRepos);
-        const newState = reposReducer(initialStateWithLoading, receiveAction);
+        const newState = reposReducer(initialStateWithFetching, receiveAction);
 
-        expect(newState.loading).toBe(false);
+        expect(newState.fetching).toBe(false);
         expect(newState.repos).toBe(mockRepos);
       });
 
-      it('requestRepos starts loading and empties results', () => {
+      it('requestRepos starts fetching and empties results', () => {
         const orgName = 'github';
         const stateWithResults = {
           ...initialState,
-          loading: true,
+          fetching: false,
           repos: mockRepos
         };
         const requestAction = requestRepos(orgName);
         const newState = reposReducer(stateWithResults, requestAction);
 
-        expect(newState.loading).toBe(true);
+        expect(newState.fetching).toBe(true);
         expect(newState.repos).toBe(null);
       });
     });
